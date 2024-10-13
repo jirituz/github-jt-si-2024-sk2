@@ -1,17 +1,21 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
-class program {
+class Program {
 
-    static void main(void v) {
+    static void main () {
 
         // chci aby se program opakoval po stisku klávesy "a"
         string again = "a";
         while(again == "a") {
             Console.Clear();
-            Console.WriteLine(**********);
-            Console.WriteLine(**********);
-            Console.WriteLine(**********);
-            Console.WriteLine(**********); 
+
+
+           Console.WriteLine ();
+           Console.WriteLine ();
+           Console.WriteLine ();
+           Console.WriteLine ();
+           Console.WriteLine ();
 
 
             // vstup uživatele - špatná varianta 
@@ -48,9 +52,15 @@ class program {
             Console.WriteLine();
 
             // logika pro výpis řady TO-DO
+            int current = first;
+            while(current <= last) {
+                Console.WriteLine(current);
+                current = current + step;
+
+            }
 
             // opakování programu 
-            Console.WriteLine("Pro opakování programu stiskněte klávesu a")
+            Console.WriteLine("Pro opakování programu stiskněte klávesu a");
             again = Console.ReadLine();
 
 
